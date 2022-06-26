@@ -4,8 +4,6 @@ services:
   zookeeper:
     hostname: zookeeper
     image: docker.io/bitnami/zookeeper
-    ports:
-      - "2181:2181"
     volumes:
       - "zookeeper_data:/bitnami"
     environment:
@@ -14,8 +12,6 @@ services:
   kafka:
     image: docker.io/bitnami/kafka
     hostname: kafka
-    ports:
-      - "9092:9092"
     volumes:
       - "kafka_data:/bitnami"
     environment:
