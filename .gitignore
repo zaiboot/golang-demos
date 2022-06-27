@@ -23,3 +23,4 @@ go.work
 #custom
 .DS_Store
 out/
+*.properties
