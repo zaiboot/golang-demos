@@ -27,7 +27,6 @@ import (
 
 func main() {
 
-    fmt.Println("jhhjkhjkhkj ->")
     broker := "kafka:9092"
 	group := "pinga.consumer.1"
 	topics := []string {"pinga"}
