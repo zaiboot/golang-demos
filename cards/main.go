@@ -28,8 +28,8 @@ func main() {
 	// 	fmt.Println( s[i])
 	// }
 
+	
 	//buildAnimals()
 
-	// greeting := "Hi there!"
 	// fmt.Println([]byte(greeting))
 }
