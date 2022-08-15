@@ -4,7 +4,7 @@ services:
   zookeeper:
     hostname: zookeeper
     container_name: zookeeper
-    image: "confluentinc/cp-zookeeper:5.2.1"
+    image: "confluentinc/cp-zookeeper"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
@@ -17,10 +17,9 @@ services:
   kafka:
     hostname: kafka
     container_name: kafka
-    image: "confluentinc/cp-enterprise-kafka:5.2.1"
+    image: "confluentinc/cp-enterprise-kafka"
     ports:
       - '9092:9092'
-      - '29094:29094'
     depends_on:
       - zookeeper
     environment:
@@ -46,3 +45,4 @@ services:
       - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
     depends_on:
       - kafka
+
